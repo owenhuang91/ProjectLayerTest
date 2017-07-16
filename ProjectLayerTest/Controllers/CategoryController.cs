@@ -7,7 +7,7 @@ using ProjectLayerTest.Models;
 
 namespace ProjectLayerTest.Controllers
 {
-    public class HomeController : Controller
+    public class CategoryController : Controller
     {
         public ActionResult Index()
         {
@@ -15,22 +15,8 @@ namespace ProjectLayerTest.Controllers
             {
                 var query = db.Categories.OrderBy(x => x.CategoryID);
                 ViewData.Model = query.ToList();
+                return View();
             }
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
         }
     }
 }
