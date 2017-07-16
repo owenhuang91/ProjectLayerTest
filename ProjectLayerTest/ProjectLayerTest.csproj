@@ -167,6 +167,8 @@
     <Compile Include="Models\Employees.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Interface\ICategoryRepository.cs.cs" />
+    <Compile Include="Models\Interface\IProductRepository.cs" />
     <Compile Include="Models\Northwind.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,6 +196,8 @@
     <Compile Include="Models\Region.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Repository\CategoryRepository.cs" />
+    <Compile Include="Models\Repository\ProductRepository.cs" />
     <Compile Include="Models\Shippers.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
